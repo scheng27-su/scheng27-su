@@ -1,16 +1,41 @@
 body {
-    background-image: url('../images/SYRACUSE_BlockS_ORANGE_RGB.png');
-    background-repeat: repeat;
-    background-size: contain; 
+    font-family: "Open Sans", Roboto, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
-p {
-    background-color: #FFE4B5; 
-    border: 3px solid #4682B4; 
-    padding: 20px;
-    width: fit-content;
-    margin: 20px;
-    font-family: Arial, sans-serif; 
-    color: #FF4500; 
-    font-size: 20px; 
+
+h2, h3 {
     text-align: center; 
+}
+
+p {
+    text-align: center;
+}
+
+.event {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 20px auto; 
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.resources {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.resources img {
+    width: 200px;
+    margin: 10px;
 }
