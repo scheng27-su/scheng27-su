@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif; /* Ensure Georgia is applied to all elements */
+}
+
+
+body {
+    line-height: 1.6;
+    color: #ffffbe;
+    background-color: #07002c;
+    padding: 10px;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0; 
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+
+nav a {
+    color: #e6e600; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ff37; 
+}
+
+header {
+    display: none; 
+}
+
+/* Main Flexbox Container */
+.content-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Skills and Sidebar Flexbox */
+.skills-content {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+.skills-and-sidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Intro Text and Skills Row Container */
+.intro-and-skills {
+    max-width: 75%; 
+    margin: 0;
+    text-align: center;
+}
+
+/* Skills Row */
+.skills-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill i {
+    font-size: 3em;
+    color: #ff06f3d5;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.skill i:hover {
+    color: #39FF14;
+}
+
+.skill p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Sidebar Styles */
+aside {
+    flex-basis: 25%;
+    background-color: #a2058aa2;
+    color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+aside i:hover {
+    color: #39FF14;
+}
+
+aside h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d9ff00;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #ffffbe;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    nav a {
+        display: block;
+        width: 100%; 
+        padding: 10px;
+        text-align: left; 
+
+    nav a:hover {
+        background-color: #535392; 
+    }
+}
+}
+.responsive-banner {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block; 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
