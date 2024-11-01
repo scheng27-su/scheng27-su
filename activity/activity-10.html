@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation 10</title>
+    <style>
+        body {
+            height: 200vh;
+            margin: 5;
+            font-size: 3em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .large-text {
+            display: none;
+        }
+
+        @media (min-width: 801px) {
+            .large-text {
+                display: block;
+            }
+
+            .small-text {
+                display: none;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .small-text {
+                display: block;
+            }
+
+            .large-text {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="large-text">I'm large.</div>
+    <div class="small-text">I'm small.</div>
+</body>
+</html>
