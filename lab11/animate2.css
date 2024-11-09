@@ -1,20 +1,15 @@
-/* Flex container styling for the shell images */
 .container {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-/* Basic styling for each shell image */
 img {
     width: 100px;
     cursor: pointer;
     position: relative;
 }
 
-/* Animation for each shell to create a shuffling effect */
-
-/* Animation for the first shell */
 #first {
     animation: shuffleFirst 1.5s ease-in-out infinite alternate;
 }
@@ -25,7 +20,6 @@ img {
     100% { transform: translateX(-10px); }
 }
 
-/* Animation for the second shell */
 #second {
     animation: shuffleSecond 1.5s ease-in-out infinite alternate;
 }
@@ -36,7 +30,6 @@ img {
     100% { transform: translateX(10px); }
 }
 
-/* Animation for the third shell */
 #third {
     animation: shuffleThird 1.5s ease-in-out infinite alternate;
 }
@@ -47,7 +40,6 @@ img {
     100% { transform: translateY(5px); }
 }
 
-/* Style for the message display area */
 #messages {
     margin-top: 20px;
     font-size: 1.2em;
