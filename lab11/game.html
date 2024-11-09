@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11 Walnut Game</title>
+    <link rel="stylesheet" href="animate.css">
+    <script>
+        function WinnerMessage() {
+            document.getElementById("messageDisplay").innerHTML = "You Won!";
+        }
+
+        function TryAgain() {
+            document.getElementById("messageDisplay").innerHTML = "Wrong Shell - Try Again";
+        }
+
+        function ShuffleShells() {
+            let orderArray = [1, 2, 3];
+            orderArray.sort(() => Math.random() - 0.5);
+
+            document.querySelector(".first").style.order = orderArray[0];
+            document.querySelector(".second").style.order = orderArray[1];
+            document.querySelector(".third").style.order = orderArray[2];
+        }
+    </script>
+</head>
+<body onload="ShuffleShells()">
+    <h1>Choose a Walnut</h1>
+
+    <div class="container">
+        <img src="..\lab11\Walnut-PNG.png" alt="first walnut" class="first" onclick="WinnerMessage()">
+        <img src="..\lab11\Walnut-PNG.png" alt="second walnut" class="second" onclick="TryAgain()">
+        <img src="..\lab11\Walnut-PNG.png" alt="third walnut" class="third" onclick="TryAgain()">
+    </div>
+
+    <div id="messageDisplay" style="margin-top: 20px; font-size: 1.2em; text-align: center;"></div>
+</body>
+</html>

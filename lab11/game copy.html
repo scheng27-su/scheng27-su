@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11 Preview - Walnut Game</title>
+    <link rel="stylesheet" href="animate2.css"> <!-- Changed to animate2.css as instructed -->
+    <style>
+        /* Flex container for shell images */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Order for initial layout */
+        #first { order: 1; }
+        #second { order: 2; }
+        #third { order: 3; }
+
+        /* Basic styling for shell images */
+        img {
+            width: 100px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Styling for message display area */
+        #messages {
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+    <script>
+        // Function to display "You Won!" message when the correct shell is clicked
+        function WinnerMessage() {
+            document.getElementById("messages").innerHTML = "You Won!";
+        }
+
+        // Function to display "Wrong Shell - Try Again" when an incorrect shell is clicked
+        function TryAgain() {
+            document.getElementById("messages").innerHTML = "Wrong Shell - Try Again";
+        }
+
+        // Function to shuffle the order of the shells on page load
+        function ShuffleShells() {
+            document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2);
+        }
+    </script>
+</head>
+<body onload="ShuffleShells()">
+    <h1>Choose a Walnut</h1>
+
+    <!-- Flex container for shell images with click events -->
+    <div class="container">
+        <img src="..\lab11\Walnut-PNG.png" id="first" onclick="WinnerMessage()" alt="first walnut">
+        <img src="..\lab11\Walnut-PNG.png" id="second" onclick="TryAgain()" alt="second walnut">
+        <img src="..\lab11\Walnut-PNG.png" id="third" onclick="TryAgain()" alt="third walnut">
+    </div>
+
+    <!-- Message display area -->
+    <div id="messages"></div>
+</body>
+</html>
