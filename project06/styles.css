@@ -1,0 +1,80 @@
+/* Basic Colors */
+body {
+    background-color: #1E1E2F;  
+    color: #E0E0E0; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF; 
+    font-family: 'Arial Black', sans-serif;  
+    margin-top: 0;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1em;
+}
+
+/* Links */
+a {
+    color: #0DB9D7;  
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A6A6E5;  
+}
+
+/* Navigation */
+nav {
+    background-color: #2C2C3A;  
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #E0E0E0;  /* Light gray text for nav links */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF4F6D;  /* Accent color for hover */
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #2C2C3A;
+    color: #E0E0E0;
+    font-size: 0.9em;
+}
