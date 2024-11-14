@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syracuse University</title>
+    <style>
+        /* Inline CSS for styling */
+        #schoolName {
+            font-size: 24px;
+            color: black;
+            text-align: center;
+            margin-top: 50px;
+            cursor: pointer; /* Changes cursor to pointer to indicate it's clickable */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Div containing the text -->
+    <div id="schoolName">Syracuse University</div>
+
+    <script>
+        // JavaScript to change the text and color on click
+        document.getElementById("schoolName").onclick = function() {
+            this.innerHTML = "Orange Nation";
+            this.style.color = "orange";
+        };
+    </script>
+
+</body>
+</html>
