@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\project05\styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Future Trends & Security Tips - IoT 101</title>
 </head>
 <body>
 
     <!-- Header and Navigation -->
     <header>
-        <h1>Internet of Things (IoTs) 101</h1>
+        <h1>Internet of Things (IoT) 101</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,20 +20,58 @@
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
         <!-- Future Emerging Trends Section -->
-        <section>
+        <section class="trends-section">
             <h2>Future Emerging Trends:</h2>
-            <ul>
-                <li><strong>Artificial Intelligence</strong>: Enhances data analysis for users, with decision-making capabilities.</li>
-                <li><strong>Standardization</strong>: Adding common protocols and guidelines to streamline communication between devices, reduces complexity.</li>
-                <li><strong>Smart Cities</strong>: Improve urban infrastructure, public services, and better resource management.</li>
-                <li><strong>Healthcare</strong>: Remote monitoring, personalized treatment to improve patients’ experiences.</li>
-                <li><strong>Sustainability</strong>: Optimizing resource use, minimizing inefficient conditions.</li>
-                <li><strong>Self-Maintaining Smart Appliances</strong>: Use IoT sensors and AI for performance monitoring.</li>
-            </ul>
-            <aside>
-                <h3>Existing trends:</h3>
+            
+            <!-- Collapsible Trend Items -->
+            <div class="collapsible-box">
+                <button class="collapsible-btn">Artificial Intelligence</button>
+                <div class="collapsible-content">
+                    <p>Enhances data analysis for users, with decision-making capabilities.</p>
+                </div>
+            </div>
+    
+            <div class="collapsible-box">
+                <button class="collapsible-btn">Standardization</button>
+                <div class="collapsible-content">
+                    <p>Adding common protocols and guidelines to streamline communication between devices, reducing complexity.</p>
+                </div>
+            </div>
+    
+            <div class="collapsible-box">
+                <button class="collapsible-btn">Smart Cities</button>
+                <div class="collapsible-content">
+                    <p>Improve urban infrastructure, public services, and better resource management.</p>
+                </div>
+            </div>
+    
+            <div class="collapsible-box">
+                <button class="collapsible-btn">Healthcare</button>
+                <div class="collapsible-content">
+                    <p>Remote monitoring and personalized treatment to improve patients’ experiences.</p>
+                </div>
+            </div>
+    
+            <div class="collapsible-box">
+                <button class="collapsible-btn">Sustainability</button>
+                <div class="collapsible-content">
+                    <p>Optimizing resource use, minimizing inefficient conditions.</p>
+                </div>
+            </div>
+    
+            <div class="collapsible-box">
+                <button class="collapsible-btn">Self-Maintaining Smart Appliances</button>
+                <div class="collapsible-content">
+                    <p>Use IoT sensors and AI for performance monitoring.</p>
+                </div>
+            </div>
+    
+            <!-- Existing Trends Box -->
+            <aside class="existing-trends-box">
+                <h3>Existing Trends:</h3>
                 <ul>
                     <li>Smart Homes</li>
                     <li>Wearables</li>
@@ -90,7 +128,27 @@
             </ul>
             <p>The Internet of Things (IoT) offers numerous significant benefits for our daily lives and operations. It automates processes and creates better efficiency through cost savings and resource management. Many IoT devices can be tailored to users' needs and concerns, boosting user satisfaction. All in all, it boasts a transformative move in the technology world as well as in our daily lifestyles.</p>
         </section>
-    </main>
+    </main>    
+    <script>
+        // Select all collapsible buttons
+        const collapsibleButtons = document.querySelectorAll('.collapsible-btn');
+    
+        // Loop through each button and add event listener
+        collapsibleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+                
+                // Select the corresponding content
+                const content = button.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
+    
 
     <!-- Footer -->
     <footer>
@@ -99,6 +157,3 @@
 
 </body>
 </html>
-
-
-
