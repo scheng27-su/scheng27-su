@@ -78,7 +78,6 @@ h1, h2 {
 
 /* Skills Box */
 .skills-box {
-    background-color: var(--box-bg-color);
     color: var(--text-color);
     padding: 15px;
     border-radius: 8px;
