@@ -1,0 +1,271 @@
+/* Basic Colors */
+body {
+    background-color: #1E1E2F;
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+    font-family: 'Arial Black', sans-serif;
+    margin-top: 0;
+    align-items: center;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1em;
+}
+
+/* Links */
+a {
+    color: #0DB9D7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A6A6E5;
+}
+
+/* Navigation */
+nav {
+    background-color: #2C2C3A;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #E0E0E0;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF4F6D;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+
+/* Main Content Container */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Responsive Image Styling */
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    display: block;
+    margin: 1em auto;
+}
+
+/* Flex Container for Main Content and Aside */
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep aside on the side */
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Main Content Section */
+.trends-section {
+    flex: 3; /* Allocate more space for the main content */
+    min-width: 0; /* Prevent content overflow */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+}
+
+/* Card Styling */
+.card {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Collapsible Grid for Trends Section */
+.collapsible-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.collapsible-box {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #444a5f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.collapsible-btn:focus {
+    outline: 2px dashed #0DB9D7;
+}
+
+.collapsible-btn {
+    background-color: #555a70;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible-btn::after {
+    content: "▼";
+    font-size: 0.8em;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.collapsible-btn.active::after {
+    transform: rotate(180deg);
+}
+
+.collapsible-content {
+    padding: 0 1em;
+    display: none;
+    background-color: #333a4d;
+    color: #b0b3c1;
+}
+
+/* Existing Trends Box (Aside) */
+.existing-trends-box {
+    flex: 1; /* Allocate less space for aside */
+    max-width: 250px;
+    background-color: #333a4d;
+    color: #b0b3c1;
+    border-radius: 5px;
+    padding: 1em;
+    border: 1px solid #555a70;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Security Risks Section */
+.security-risk-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure content stays side by side */
+    align-items: flex-start; /* Align at the top */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Security Risk Text */
+.security-risk-text {
+    flex: 1; /* Allocate equal space */
+    color: #b0b3c1;
+}
+
+/* Security Risk Image */
+.security-risk-image {
+    flex: 1; /* Allocate equal space */
+    max-width: 50%;
+    text-align: center;
+}
+
+.security-risk-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Detailed Security Risks and Benefits */
+.security-risk-details article,
+.iot-benefits ul li {
+    color: #b0b3c1;
+    font-size: 0.9em;
+}
+
+/* Benefits of IoT */
+.iot-benefits {
+    flex: 1; /* Equal width for both sections */
+    padding: 20px;
+    background-color: #333a4d;
+    color: #b0b3c1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: justify; /* Better readability for paragraph text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container,
+    .collapsible-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-container,
+    .security-risk-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .security-risk-image {
+        max-width: 100%;
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #2C2C3A;
+    color: #E0E0E0;
+    font-size: 0.9em;
+}

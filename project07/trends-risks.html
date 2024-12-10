@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Future Trends & Security Tips - IoT 101</title>
+    <link rel="icon" type="image/png" href="..\images\iotid-iot-device-authentication-2-512.png">
+
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Internet of Things (IoT) 101</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="devices.html">IoT Devices & Smart Home</a></li>
+                <li><a href="trends-risks.html">Future Trends & Security Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h3 style="text-align: center;">The future of IoT will be even more connected than ever. While IoT is currently revolutionary enough, its future is even broader.
+    </h3>
+    <!-- Flex container to hold both sections side-by-side -->
+        <div class="flex-container">
+            
+            <!-- Future Emerging Trends Section -->
+            <section class="trends-section">
+                <h2>Future Emerging Trends</h2>
+                
+                <!-- Grid for Collapsible Items -->
+                <div class="collapsible-grid">
+                    <div class="collapsible-box">
+                        <button class="collapsible-btn">Artificial Intelligence</button>
+                        <div class="collapsible-content">
+                            <p>Enhances data analysis for users, with decision-making capabilities.</p>
+                        </div>
+                    </div>
+    
+                    <div class="collapsible-box">
+                        <button class="collapsible-btn">Standardization</button>
+                        <div class="collapsible-content">
+                            <p>Adding common protocols and guidelines to streamline communication between devices.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Add other collapsible items here in the same structure -->
+    
+                    <div class="collapsible-box">
+                        <button class="collapsible-btn">Smart Cities</button>
+                        <div class="collapsible-content">
+                            <p>Improve urban infrastructure, public services, and better resource management.</p>
+                        </div>
+                    </div>
+    
+                    <div class="collapsible-box">
+                        <button class="collapsible-btn">Healthcare</button>
+                        <div class="collapsible-content">
+                            <p>Remote monitoring, personalized treatment to improve patients’ experiences.</p>
+                        </div>
+                    </div>
+    
+                    <div class="collapsible-box">
+                        <button class="collapsible-btn">Sustainability</button>
+                        <div class="collapsible-content">
+                            <p>Optimizing resource use, minimizing inefficient conditions.</p>
+                        </div>
+                    </div>
+    
+                    <div class="collapsible-box">
+                        <button class="collapsible-btn">Self-Maintaining Smart Appliances</button>
+                        <div class="collapsible-content">
+                            <p>Use IoT sensors and AI for performance monitoring.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Existing Trends Box -->
+            <aside class="existing-trends-box">
+                <h3>Existing Trends</h3>
+                <ul>
+                    <li>Smart Homes</li>
+                    <li>Wearables</li>
+                    <li>Voice-Activated Assistants</li>
+                    <li>Smart Appliances</li>
+                </ul>
+            </aside>
+        </div>    
+
+        <section class="security-risk-container">
+            <!-- Text Content for Security Risks -->
+            <div class="security-risk-text">
+                <h2>Security Risks</h2>
+                <p>With the rapid advancement in this technology realm, there is currently no standardized way of using IoTs. This creates a gray zone for data breaches and identity theft.</p>
+                <p>Here are some of the debatable security and ethical concerns of IoT Technology.</p>
+            </div>
+        
+            <!-- Risk Image -->
+            <div class="security-risk-image">
+                <img src="../images/Risk.webp" alt="Risk scale illustration">
+            </div>
+        </section>
+        <div class="flex-container">
+        
+            <!-- Security Risks List -->
+            <section class="security-risks">
+                <h2>Security Risks</h2>
+                <div class="security-risk-details">
+                    <article>
+                        <h4>Weak Authentication and Insecure Communication:</h4>
+                        <p>Default authentication methods make gaps for bad actors with unauthorized access</p>
+                    </article>
+    
+                    <article>
+                        <h4>Lack of Standardization:</h4>
+                        <p>Universal Standards are essential in enhancing security and user trust.</p>
+                    </article>
+    
+                    <article>
+                        <h4>Limited User Control:</h4>
+                        <p>Some cheaper tiered IoT devices have no user control, while some people also lack knowledge on how to manage settings to better security.</p>
+                    </article>
+    
+                    <article>
+                        <h4>Privacy Concerns:</h4>
+                        <p>Lack of awareness of personal data collection by IoT devices raises transparency concerns.</p>
+                    </article>
+    
+                    <article>
+                        <h4>Lack of Updates:</h4>
+                        <p>Outdated IoT versions create vulnerabilities for hackers.</p>
+                    </article>
+                </div>
+            </section>
+    
+            <!-- Benefits of IoT -->
+            <section class="iot-benefits">
+                <h2>Benefits of IoT</h2>
+                <ul>
+                    <li>Increased Efficiency</li>
+                    <li>Personalization</li>
+                    <li>Enhanced Quality of Life</li>
+                    <li>Better Resource Management</li>
+                </ul>
+                <p>The Internet of Things (IoT) offers numerous significant benefits for our daily lives and operations. It automates processes and creates better efficiency through cost savings and resource management. Many IoT devices can be tailored to users' needs and concerns, boosting user satisfaction. All in all, it represents a transformative move in the technology world and our daily lifestyles.</p>
+            </section>
+    
+        </div>
+    </main>    
+    <script>
+        // Select all collapsible buttons
+        const collapsibleButtons = document.querySelectorAll('.collapsible-btn');
+    
+        // Loop through each button and add event listener
+        collapsibleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+                
+                // Select the corresponding content
+                const content = button.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SY Cheng. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
