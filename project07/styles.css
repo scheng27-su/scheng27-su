@@ -71,7 +71,24 @@ nav ul {
       align-items: center;
     }
   }
-  
+
+  .skip-to-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0DB9D7; 
+    color: #ffffff; 
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000; 
+    transform: translateY(-100%); 
+    transition: transform 0.3s ease; 
+  }
+
+.skip-to-content:focus {
+    transform: translateY(0); 
+}
 
 /* Main Content Container */
 main {
@@ -92,19 +109,19 @@ section img {
 /* Flex Container for Main Content and Aside */
 .flex-container {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping to keep aside on the side */
-    justify-content: space-between;
-    gap: 20px;
+    flex-wrap: nowrap; 
+    justify-content: space-between; 
+    gap: 20px; 
     max-width: 1200px;
-    margin: auto;
+    margin: 20px auto;
     padding: 20px;
-    align-items: flex-start; /* Align items to the top */
+    align-items: stretch; 
 }
 
 /* Main Content Section */
 .trends-section {
-    flex: 3; /* Allocate more space for the main content */
-    min-width: 0; /* Prevent content overflow */
+    flex: 3; 
+    min-width: 0; 
 }
 
 .grid-container {
@@ -184,7 +201,7 @@ section img {
 
 /* Existing Trends Box (Aside) */
 .existing-trends-box {
-    flex: 1; /* Allocate less space for aside */
+    flex: 1; 
     max-width: 250px;
     background-color: #333a4d;
     color: #b0b3c1;
@@ -195,35 +212,37 @@ section img {
 }
 
 /* Security Risks Section */
-.security-risk-container {
-    display: flex;
-    flex-wrap: nowrap; /* Ensure content stays side by side */
-    align-items: flex-start; /* Align at the top */
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    gap: 20px;
+/* Security Risks Section */
+.security-risks {
+    flex: 1; 
     padding: 20px;
+    background-color: #1E1E2F; 
+    color: #b0b3c1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    line-height: 1.6;
 }
+
 
 /* Security Risk Text */
 .security-risk-text {
-    flex: 1; /* Allocate equal space */
+    flex: 1; 
     color: #b0b3c1;
 }
 
-/* Security Risk Image */
 .security-risk-image {
-    flex: 1; /* Allocate equal space */
-    max-width: 50%;
-    text-align: center;
+    display: flex;
+    justify-content: center; 
+    margin: 20px 0;
 }
 
 .security-risk-image img {
-    width: 100%;
+    max-width: 60%; 
     height: auto;
-    border-radius: 8px;
+    border-radius: 5px; 
 }
+
 
 /* Detailed Security Risks and Benefits */
 .security-risk-details article,
@@ -234,13 +253,14 @@ section img {
 
 /* Benefits of IoT */
 .iot-benefits {
-    flex: 1; /* Equal width for both sections */
+    flex: 1; 
     padding: 20px;
     background-color: #333a4d;
     color: #b0b3c1;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: justify; /* Better readability for paragraph text */
+    text-align: justify;
+    line-height: 1.6;
 }
 
 /* Responsive Design */
